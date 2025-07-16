@@ -1,0 +1,29 @@
+body {
+  font-family: sans-serif;
+  padding: 1em;
+  max-width: 600px;
+  margin: auto;
+}
+input, button, select {
+  width: 100%;
+  margin: 0.5em 0;
+  padding: 0.5em;
+  font-size: 1em;
+}
+.entry {
+  margin: 1em 0;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 0.5em;
+}
+.entry a {
+  text-decoration: none;
+  color: #0077ff;
+}
+code {
+  cursor: pointer;
+}
+@media (max-width: 600px) {
+  input, button, select {
+    font-size: 1em;
+  }
+}

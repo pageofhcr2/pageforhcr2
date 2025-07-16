@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Track Uploader</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
+  <script defer src="https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore.js"></script>
+  <script defer src="script.js" type="module"></script>
+</head>
+<body>
+  <h1>Uploader</h1>
+  <select id="entryType" onchange="updateForm()">
+    <option value="track">Track</option>
+    <option value="friend">Friend Link</option>
+    <option value="challenge">Challenge</option>
+  </select>
+
+  <div id="formContainer">
+    <input id="name" placeholder="In-game name" />
+    <input id="trackId" placeholder="Code" />
+    <input id="trackName" placeholder="Track/Setup name (optional)" />
+  </div>
+
+  <button onclick="submitEntry()">Submit</button>
+
+  <input id="search" placeholder="Search by name or type" oninput="searchEntries()" />
+  <div id="entryList"></div>
+</body>
+</html>
